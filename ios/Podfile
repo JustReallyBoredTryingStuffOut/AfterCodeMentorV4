@@ -52,6 +52,9 @@ target 'FitJourneyTracker' do
     :privacy_file_aggregation_enabled => podfile_properties['apple.privacyManifestAggregationEnabled'] != 'false',
   )
 
+  # Explicitly add RCTDeprecation pod to fix Xcode build errors on EAS
+  pod 'RCTDeprecation', :path => '../node_modules/react-native/ReactApple/Libraries/RCTFoundation/RCTDeprecation'
+
   post_install do |installer|
     react_native_post_install(
       installer,
