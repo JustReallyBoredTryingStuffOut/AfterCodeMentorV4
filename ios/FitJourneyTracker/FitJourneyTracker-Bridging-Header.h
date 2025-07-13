@@ -6,4 +6,6 @@
 #import <React/RCTEventEmitter.h>
 #import <React/RCTLog.h>
 #import <React/RCTUtils.h>
+#import <React/RCTBridge.h>
+#import <React/RCTEventDispatcher.h>
 #import "HealthKitModule.h"

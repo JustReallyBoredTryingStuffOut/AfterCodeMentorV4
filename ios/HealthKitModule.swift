@@ -1,5 +1,6 @@
 import Foundation
 import HealthKit
+import React
 
 @objc(HealthKitModule)
 class HealthKitModule: NSObject, RCTBridgeModule {
